@@ -35,7 +35,7 @@ public class FTPGUI extends JFrame {
     private ShowImageButton btnShow;
 
     public FTPGUI() throws Exception {
-        super("Command Pattern - Example");
+        super("Start - Command Pattern - UI");
 
         // Create controls
         defLocalList = new DefaultListModel();
