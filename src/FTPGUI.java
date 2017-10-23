@@ -24,6 +24,10 @@ public class FTPGUI extends JFrame {
     public static final String SHOW = "Show";
     public static final String EXIT = "Exit";
 
+    public Caretaker caretaker = new Caretaker();
+    public Originator originator = new Originator();
+    public int imageCount = 0, currentImage = 0;
+
     private JPanel pnlFTPUI;
     public static JList localList;
     public static JList remoteList;
