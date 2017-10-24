@@ -23,6 +23,7 @@ public class ShowImage extends JFrame {
     private NextButton btnNext;
     private PrevButton btnPrev;
 
+    private Container contentPane = getContentPane();
     public ShowImage(String selectedItem) throws IOException {
 
         super("Show Image - Command Pattern - UI");
@@ -115,16 +116,21 @@ public class ShowImage extends JFrame {
 
         //****************************************************
         //Add the buttons to the frame
-        Container contentPane = getContentPane();
+//        Container contentPane = getContentPane();
         contentPane.add(buttonPanel, BorderLayout.NORTH);
         //****************************************************
         //Add the image to the frame
         contentPane.add(getImageFromSelection(selectedItem), BorderLayout.CENTER);
         System.out.print(selectedItem);
 
+
 //        selectedItem = "A (2).JPG";
 //        contentPane.add(getImageFromSelection(selectedItem), BorderLayout.CENTER);
 
+    }
+
+    public void changeImage(String imageSelection) throws IOException {
+        contentPane.add(getImageFromSelection(imageSelection), BorderLayout.CENTER);
     }
 
     public JLabel getImageFromSelection(String selection) throws IOException {
