@@ -2,7 +2,7 @@ import com.sun.management.VMOption;
 
 public class MementoControl {
 
-    private static int imagePathCount;
+    private static int imageCount;
     private static int currentPathNumber;
 
     // Not sure if I need this at all yet.
@@ -18,15 +18,15 @@ public class MementoControl {
     }
 
     public static void setImagePathCount(int NextCountValue) {
-        imagePathCount = NextCountValue;
+        imageCount = NextCountValue;
     }
 
-    public static int getCurrentPathNumber() {
+    public static int getCurrentPathIndex() {
         return currentPathNumber;
     }
 
-    public static int getImagePathCount() {
-        return imagePathCount;
+    public static int getImageCount(){
+        return imageCount;
     }
 
 }

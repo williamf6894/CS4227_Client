@@ -138,7 +138,6 @@ public class ShowImage extends JFrame {
         //System.out.println("Worked");
         File file = new File("./images/" + selection);
         BufferedImage image = ImageIO.read(file);
-        JLabel actualImage = new JLabel(new ImageIcon(image));
-        return actualImage;
+        return new JLabel(new ImageIcon(image));
     }
 }

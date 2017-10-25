@@ -14,9 +14,9 @@ class ShowImageButton extends JButton implements CommandInterface {
         MementoControl.originator.set((ShowImage) frame, selectedItem );
         MementoControl.caretaker.addMemento( MementoControl.originator.storeInMemento() );
 
-        int count = MementoControl.getImagePathCount() + 1;
+        int count = MementoControl.getImageCount() + 1;
         MementoControl.setImagePathCount( count );
-        int currentImage = MementoControl.getCurrentPathNumber() + 1;
+        int currentImage = MementoControl.getCurrentPathIndex() + 1;
         MementoControl.setCurrentPathIndex( currentImage );
 
         //ShowImage img = new ShowImage(selectedItem);
